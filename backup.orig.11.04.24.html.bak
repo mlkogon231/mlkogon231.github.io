@@ -99,43 +99,45 @@
 
 <h4><a href="http://20.51.115.58:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m&var-datasource=edyj6hong89vkd&var-job=node_exporter&var-node=20.9.142.252%3A9100&var-diskdevices=%5Ba-z%5D%2B%7Cnvme%5B0-9%5D%2Bn%5B0-9%5D%2B&from=1726806190281&to=1726892590281">
     09/20/2024 - IN PROGRESS - Live Grafana Dashboard Demo using Prometheus Metrics
-</a></h4>
+</a></h4>-->
 <p>Due to the cost of maintenance, this project below has 2 animated gifs showing the Jenkins pipeline showing the output:</p>
         <h4>
             09/30/2024 - CI/CD Demo DevSecOps Jenkins pipeline: <p>
                 <a href="https://github.com/mlkogon231/mlkogon231.github.io/blob/main/pipeline1.gif">animated gif 1 (15 seconds)</a>
             </p><a href="https://github.com/mlkogon231/mlkogon231.github.io/blob/main/pipeline2.gif">animated gif 2 (10 seconds) </a>
             
-        </h4>-->
+        </h4>
        
         <!-- IAC CI/CD Projects -->
         <h2>IAC CI/CD Projects</h2>
+
+
 
         <h4><a href="https://github.com/mlkogon231/terraform2024">
             09/10/2024 - Github.com repo - Azure IAC - Terraform code for Application Gateway
         </a></h4>
         <p>This project involves the creation of Terraform modules for an Azure Application Gateway. The infrastructure includes a Virtual Network, an Application Gateway Subnet, a Managed Identity, and a Public IP address.</p>
 
-              <!-- Section for Completed Courses -->
-              <h2>Recent DevOps Course Completion Certificates from Udemy.com </h2>
 
-              <h4><a href="https://www.udemy.com/certificate/UC-641b7272-2de8-47a6-a32e-44e0109a8016/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">
-                  08/20/2024 - Course completion certificate - Observability in Cloud Native apps using OpenTelemetry
-              </a></h4>
-      
-              <h4><a href="https://www.udemy.com/certificate/UC-6177a426-d59d-405f-ae22-cd3acb0e67cb/">
-                  09/26/2024 - Course completion certificate - DevSecOps with Mario Game Project with deployment on AKS
-              </a></h4>
-      
-              <h4><a href="https://www.udemy.com/certificate/UC-1be43030-d7ab-4b84-926b-27ee8b15386b/">
-                  10/02/2024 - Course completion certificate - Jenkins: Beginner to Pro
-              </a></h4>
-<!-- Object Data Storage Projects -->
+
         <h2>Object/Data Storage Administration: Qumulo/MinIO </h2>
 
         <h4> Update: 10/16/2024, Due to cost issues, I will be switching to open source MinIO, look for something here shortly</h4>
 
-  
+                <!-- Section for Completed Courses -->
+                <h2>Recent DevOps Courses completed from Udemy.com </h2>
+
+                <h4><a href="https://www.udemy.com/certificate/UC-641b7272-2de8-47a6-a32e-44e0109a8016/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">
+                    08/20/2024 - Course completion certificate - Observability in Cloud Native apps using OpenTelemetry
+                </a></h4>
+        
+                <h4><a href="https://www.udemy.com/certificate/UC-6177a426-d59d-405f-ae22-cd3acb0e67cb/">
+                    09/26/2024 - Course completion certificate - DevSecOps with Mario Game Project with deployment on AKS
+                </a></h4>
+        
+                <h4><a href="https://www.udemy.com/certificate/UC-1be43030-d7ab-4b84-926b-27ee8b15386b/">
+                    10/02/2024 - Course completion certificate - Jenkins: Beginner to Pro
+                </a></h4>
         
 <!--
         <div class="project">
