@@ -13,211 +13,188 @@
             margin: 0;
             padding: 0;
         }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
+            padding-left: 25px; /* Shift content to the right */
         }
-        header {
-            background-color: #2c2c2c;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            color: #4CAF50;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+
         h2 {
             color: #3498db;
-            font-size: 2em;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        h4 {
-            color: #e74c3c;
-            font-size: 1em;
+            font-size: 1.8em;
+            border-bottom: 2px solid #1a1a1a; /* Remove the blue line under the header */
+            padding-bottom: 5px;
             margin-top: 20px;
         }
+
+        .shaded-box {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-row {
+            display: grid;
+            grid-template-columns: 500px 600px; /* Adjust column width for more space */
+            gap: 40px;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .project-row:last-child {
+            border-bottom: none;
+        }
+
+        .project-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 15px;
+        }
+
+        .project-type {
+            color: #3498db;
+            font-size: 18px; /* Reduced font size */
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .project-left h4 {
+            font-size: 20px; /* Reduced font size */
+            font-weight: bold;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+
+        .project-right {
+            border-left: 2px solid #444;
+            padding-left: 20px;
+        }
+
+        ul {
+            margin: 3px 0;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            line-height: 1.2;
+            color: #bdc3c7;
+        }
+
         a {
             color: #f39c12;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        a:hover {
-            color: #d35400;
-        }
-        .project {
-            background-color: #2c2c2c;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .project-title {
-            color: #3498db;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .project-description {
-            color: #bdc3c7;
-            font-size: 1em;
-        }
-        .shaded-box {
-    background-color: #333; /* Dark background color for shading */
-    color: #fff; /* Text color */
-    padding: 20px; /* Spacing inside the box */
-    border-radius: 10px; /* Rounded corners */
-    font-family: Arial, sans-serif; /* Optional font style */
-}
 
+        a:hover {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+        .built-using {
+            color: #f39c12;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .additional-projects h4 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #f39c12;
+        }
+
+        /* Additional styling for Multicloud Project section */
+        .project {
+            margin: 10px 0;
+        }
+
+        .project h4 {
+            color: #f39c12;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .project-description {
+            font-size: 0.9em;
+            color: #bdc3c7;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h2>Welcome to Mark Kogon's Portfolio Website</h2>
-    </header>
-    
     <div class="container">
 
-<!--  new initiative 
-<h2>Weekly Project Initiative</h2>-->
+        <header>
+            <h2>Welcome to Mark Kogon's Portfolio Website</h2>
+        </header>
+        <h2>Recent Projects</h2>
+        
+        <div class="shaded-box">
+            <!-- DevSecOps Pipeline -->
+            <div class="project-row">
+                <div class="project-left">
+                    <div class="project-type">DEVSECOPS PIPELINE</div>
+                    <h4>
+                        11/13/24 - <a href="./devsecops-dashboard/index.html">Click here for Live DevSecOps Dashboard</a>
+                    </h4>
+                </div>
+                <div class="project-right">
+                    <p>Real-time metrics from GitHub Actions Pipeline demonstrating:</p>
+                    <ul>
+                        <li>Secret Scanning with Semgrep</li>
+                        <li>Container Security Analysis with Trivy</li>
+                        <li>Dependency Vulnerability Scanning</li>
+                        <li>Static Application Security Testing (SAST)</li>
+                    </ul>
+                    <p class="built-using">Built using GitHub Actions, open-source security tools, and real-time metric tracking.</p>
+                </div>
+            </div>
 
-<h2 class="text-[#3498db] text-2xl">DevSecOps Pipeline Implementation</h2>
-
-<div class="bg-[#2a2a2a] p-6 rounded-lg shadow-lg border border-[#3498db] my-4">
-    <h3 class="text-orange-400 mb-4">11/13/24 - <a href="./devsecops-dashboard/index.html" class="hover:text-orange-300">Click here for Live DevSecOps Dashboard</a> - Real-time metrics from GitHub Actions Pipeline with features below:</h3>
-
-    <div class="text-gray-300 mb-4">
-        This DevSecOps implementation demonstrates security-first CI/CD practices including:
-        <ul class="list-disc list-inside mt-2 space-y-2 ml-4">
-            <li>Secret Scanning with Semgrep</li>
-            <li>Container Security Analysis with Trivy</li>
-            <li>Dependency Vulnerability Scanning</li>
-            <li>Static Application Security Testing (SAST)</li>
-        </ul>
-    </div>
-
-    <div class="text-gray-300">
-        Built using GitHub Actions, open-source security tools, and real-time metric tracking. Pipeline source code available at: 
-        <a href="https://github.com/mlkogon231/githubActionsCICD" class="text-[#3498db] hover:text-[#5dade2]">github.com/mlkogon231/githubActionsCICD</a>
-    </div>
-</div>
-<div class="container">
-
-
-<!-- Site Reliability Engineering (Observability) -->
-
-<h2>Site Reliability/Support Engineering (Observability)</h2>
-
-<!--
-<h4>
-    <a href="http://20.9.142.252:9090/graph?g0.range_input=30m&g0.expr=node_memory_MemFree_bytes&g0.tab=0">09/01/2024 - Update - Live Prometheus Observability Demo</a>
-     </h4> -->
-     <div class="shaded-box">
-        <h4>
-            <a href="https://mkogondevops.grafana.net/public-dashboards/4ad93ec860ed4547ad9fba0a39a5d2cb">
-                <span style="font-size: 18px; font-weight: bold;">
-                    11/08/24 - click this link for Live AI Ops Demo Dashboard - Real-time monitoring of Azure Web App with the features below:
-                </span>
-            </a>
-        </h4>
-    
-        <div class="project">
-            <p class="project-description" style="font-size: 1em;">
-                This AI Ops dashboard demonstrates automated monitoring and intelligent operations including:
-                <ul style="color: #bdc3c7; font-size: 1em;">
-                    <li>AI-powered Anomaly Detection in Response Times</li>
-                    <li>Automated Alert Generation and Intelligent Thresholds</li>
-                    <li>Predictive Analysis of System Performance</li>
-                    <li>Machine Learning-based Error Pattern Recognition</li>
-                </ul>
-                <span style="font-family: Arial, sans-serif; font-size: 1.1em;">
-                    Built using Azure Application Insights AI capabilities, Grafana Cloud analytics, and automated traffic generation with intelligent pattern simulation on Ubuntu VM.
-                </span>
-            </p>
+            <!-- SRE/Observability -->
+            <div class="project-row">
+                <div class="project-left">
+                    <div class="project-type">SRE/OBSERVABILITY</div>
+                    <h4>
+                        11/08/24 - <a href="https://mkogondevops.grafana.net/public-dashboards/4ad93ec860ed4547ad9fba0a39a5d2cb">Click here for Live AI Ops Demo Dashboard</a>
+                    </h4>
+                </div>
+                <div class="project-right">
+                    <p>Real-time monitoring of Azure Web App featuring:</p>
+                    <ul>
+                        <li>AI-powered Anomaly Detection in Response Times</li>
+                        <li>Automated Alert Generation and Intelligent Thresholds</li>
+                        <li>Predictive Analysis of System Performance</li>
+                        <li>Machine Learning-based Error Pattern Recognition</li>
+                    </ul>
+                    <p class="built-using">Built using Azure Application Insights AI capabilities and Grafana Cloud analytics.</p>
+                </div>
+            </div>
         </div>
-    </div>
-<!-- end of trying to make that smaller-->
-     <h4>
-        <a href="https://mkogondevops.grafana.net/public-dashboards/29ea5f9495444909a063c3d281546db4">
-        <span style="font-size: 24px; font-weight: bold;">
-            11/03/24 - (In Progress) Example Grafana Cloud Dashboard for a Demo Product called ShoeHub showing US Sales running securely on prometheus.markkogon.com (10/30/24 project below)</span></a>
-         </h4>
 
-
-
-     <h4>
-        <a href="https://prometheus.markkogon.com/graph?g0.expr=shoehub_IN_payments_Cash&g0.tab=0&g0.display_mode=lines&g0.show_exemplars=0&g0.range_input=1h"><span style="font-size: 24px; font-weight: bold;">10/30/2024 - https://prometheus.markkogon.com - Live Prometheus UI Demo for ShoeHub with SSL  </span></a>
-         </h4> <!--              <!-- Section for Completed Courses -->
-                <h2>Recent DevOps Courses completed from Udemy.com </h2>
-
-                <h4><a href="https://www.udemy.com/certificate/UC-641b7272-2de8-47a6-a32e-44e0109a8016/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">
-                    08/20/2024 - Course completion certificate - Observability in Cloud Native apps using OpenTelemetry
-                </a></h4>
-        
-                <h4><a href="https://www.udemy.com/certificate/UC-6177a426-d59d-405f-ae22-cd3acb0e67cb/">
-                    09/26/2024 - Course completion certificate - DevSecOps with Mario Game Project with deployment on AKS
-                </a></h4>
-        
-                <h4><a href="https://www.udemy.com/certificate/UC-1be43030-d7ab-4b84-926b-27ee8b15386b/">
-                    10/02/2024 - Course completion certificate - Jenkins: Beginner to Pro
-                </a></h4> 
-                <!--
-              <h4>
-        <span style="font-size: 24px; font-weight: bold;">10/29/2024 Down for maintance, back up 10/30/2024 - Live Prometheus UI Demo with SSL (In progress)</span>
-         </h4>
-
-<h4><a href="http://20.51.115.58:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m&var-datasource=edyj6hong89vkd&var-job=node_exporter&var-node=20.9.142.252%3A9100&var-diskdevices=%5Ba-z%5D%2B%7Cnvme%5B0-9%5D%2Bn%5B0-9%5D%2B&from=1726806190281&to=1726892590281">
-    09/20/2024 - IN PROGRESS - Live Grafana Dashboard Demo using Prometheus Metrics
-</a></h4>
-<p>Due to the cost of maintenance, this project below has 2 animated gifs showing the Jenkins pipeline showing the output:</p>
-        <h4>
-            09/30/2024 - CI/CD Demo DevSecOps Jenkins pipeline: <p>
-                <a href="https://github.com/mlkogon231/mlkogon231.github.io/blob/main/pipeline1.gif">animated gif 1 (15 seconds)</a>
-            </p><a href="https://github.com/mlkogon231/mlkogon231.github.io/blob/main/pipeline2.gif">animated gif 2 (10 seconds) </a>
+        <h2>Additional Projects & Certifications</h2>
+        <div class="shaded-box additional-projects">
+            <h4><a href="https://mkogondevops.grafana.net/public-dashboards/29ea5f9495444909a063c3d281546db4">11/03/24 - (In Progress) Example Grafana Cloud Dashboard for a Demo Product called ShoeHub</a></h4>
+            <h4><a href="https://prometheus.markkogon.com">10/30/2024 - Live Prometheus UI Demo for ShoeHub with SSL</a></h4>
             
-        </h4>-->
-       
-        <!-- IAC CI/CD Projects -->
-        <h2>IAC CI/CD Projects</h2>
-
-        <h4><a href="https://github.com/mlkogon231/terraform2024">
-            09/10/2024 - Github.com repo - Azure IAC - Terraform code for Application Gateway
-        </a></h4>
-        <p>This project involves the creation of Terraform modules for an Azure Application Gateway. The infrastructure includes a Virtual Network, an Application Gateway Subnet, a Managed Identity, and a Public IP address.</p>
-
-              <!-- Section for Completed Courses 
-              <h2>Recent DevOps Course Completion Certificates from Udemy.com </h2>
-
-              <h4><a href="https://www.udemy.com/certificate/UC-641b7272-2de8-47a6-a32e-44e0109a8016/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">
-                  08/20/2024 - Course completion certificate - Observability in Cloud Native apps using OpenTelemetry
-              </a></h4>
-      
-              <h4><a href="https://www.udemy.com/certificate/UC-6177a426-d59d-405f-ae22-cd3acb0e67cb/">
-                  09/26/2024 - Course completion certificate - DevSecOps with Mario Game Project with deployment on AKS
-              </a></h4>
-      
-              <h4><a href="https://www.udemy.com/certificate/UC-1be43030-d7ab-4b84-926b-27ee8b15386b/">
-                  10/02/2024 - Course completion certificate - Jenkins: Beginner to Pro
-              </a></h4>-->
-<!-- Object Data Storage Projects -->
-        <h2>Object/Data Storage Administration: Qumulo/MinIO </h2>
-
-        <h4> Update: 10/16/2024, Due to cost issues, I will be switching to open source MinIO, look for something here shortly</h4>
-
-  
-        
-<!--
-        <div class="project">
-            <h4 class="project-title">Prometheus/Grafana Observability and Terraform</h4>
-            <p class="project-description">The projects above demonstrate Prometheus/Grafana observability and some Terraform code.</p>
+            <h2>Recent DevOps Courses completed from Udemy.com</h2>
+            <h4><a href="#">08/20/2024 - Observability in Cloud Native apps using OpenTelemetry</a></h4>
+            <h4><a href="#">09/26/2024 - DevSecOps with Mario Game Project with deployment on AKS</a></h4>
+            <h4><a href="#">10/02/2024 - Jenkins: Beginner to Pro</a></h4>
         </div>
-    -->
-        <div class="project">
-            <h4 class="project-title"><a href="http://34.86.14.160/">Multicloud project: (Google and AWS) Real World App Demo</a></h4>
-            <p class="project-description">This project demonstrates a real-world application of a COVID-19 Tracking Status Software for a Luxury Hotel Company. The software runs on Google Kubernetes Engine, with a Google MySQL database. Documents are stored on an AWS S3 Storage Bucket (may take a minute to spin up).</p>
+
+        <h2>Multicloud Project</h2>
+        <div class="shaded-box">
+            <div class="project">
+                <h4><a href="http://34.86.14.160/">Multicloud project: (Google and AWS) Real World App Demo</a></h4>
+                <p class="project-description">This project demonstrates a real-world application of a COVID-19 Tracking Status Software for a Luxury Hotel Company. The software runs on Google Kubernetes Engine, with a Google MySQL database. Documents are stored on an AWS S3 Storage Bucket (may take a minute to spin up).</p>
+            </div>
         </div>
     </div>
 </body>
