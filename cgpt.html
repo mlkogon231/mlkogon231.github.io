@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Kogon's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+            padding-left: 25px; /* Shift content to the right */
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 1.8em;
+            border-bottom: 2px solid #1a1a1a; /* Remove the blue line under the header */
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        .shaded-box {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-row {
+            display: grid;
+            grid-template-columns: 500px 600px; /* Adjust column width for more space */
+            gap: 40px;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .project-row:last-child {
+            border-bottom: none;
+        }
+
+        .project-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 15px;
+        }
+
+        .project-type {
+            color: #3498db;
+            font-size: 18px; /* Reduced font size */
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .project-left h4 {
+            font-size: 20px; /* Reduced font size */
+            font-weight: bold;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+
+        .project-right {
+            border-left: 2px solid #444;
+            padding-left: 20px;
+        }
+
+        ul {
+            margin: 3px 0;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            line-height: 1.2;
+            color: #bdc3c7;
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+        .built-using {
+            color: #f39c12;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .additional-projects h4 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #f39c12;
+        }
+
+        /* Additional styling for Multicloud Project section */
+        .project {
+            margin: 10px 0;
+        }
+
+        .project h4 {
+            color: #f39c12;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .project-description {
+            font-size: 0.9em;
+            color: #bdc3c7;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h2>Welcome to Mark Kogon's Portfolio Website</h2>
+        </header>
+        <h2>Recent Projects</h2>
+        
+        <div class="shaded-box">
+            <!-- DevSecOps Pipeline -->
+            <div class="project-row">
+                <div class="project-left">
+                    <div class="project-type">DEVSECOPS PIPELINE</div>
+                    <h4>
+                        11/13/24 - <a href="./devsecops-dashboard/index.html">Click here for Live DevSecOps Dashboard</a>
+                    </h4>
+                </div>
+                <div class="project-right">
+                    <p>Real-time metrics from GitHub Actions Pipeline demonstrating:</p>
+                    <ul>
+                        <li>Secret Scanning with Semgrep</li>
+                        <li>Container Security Analysis with Trivy</li>
+                        <li>Dependency Vulnerability Scanning</li>
+                        <li>Static Application Security Testing (SAST)</li>
+                    </ul>
+                    <p class="built-using">Built using GitHub Actions, open-source security tools, and real-time metric tracking.</p>
+                </div>
+            </div>
+
+            <!-- SRE/Observability -->
+            <div class="project-row">
+                <div class="project-left">
+                    <div class="project-type">SRE/OBSERVABILITY</div>
+                    <h4>
+                        11/08/24 - <a href="https://mkogondevops.grafana.net/public-dashboards/4ad93ec860ed4547ad9fba0a39a5d2cb">Click here for Live AI Ops Demo Dashboard</a>
+                    </h4>
+                </div>
+                <div class="project-right">
+                    <p>Real-time monitoring of Azure Web App featuring:</p>
+                    <ul>
+                        <li>AI-powered Anomaly Detection in Response Times</li>
+                        <li>Automated Alert Generation and Intelligent Thresholds</li>
+                        <li>Predictive Analysis of System Performance</li>
+                        <li>Machine Learning-based Error Pattern Recognition</li>
+                    </ul>
+                    <p class="built-using">Built using Azure Application Insights AI capabilities and Grafana Cloud analytics.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Additional Projects & Certifications</h2>
+        <div class="shaded-box additional-projects">
+            <h4><a href="https://mkogondevops.grafana.net/public-dashboards/29ea5f9495444909a063c3d281546db4">11/03/24 - (In Progress) Example Grafana Cloud Dashboard for a Demo Product called ShoeHub</a></h4>
+            <h4><a href="https://prometheus.markkogon.com">10/30/2024 - Live Prometheus UI Demo for ShoeHub with SSL</a></h4>
+            
+            <h2>Recent DevOps Courses completed from Udemy.com</h2>
+            <h4><a href="#">08/20/2024 - Observability in Cloud Native apps using OpenTelemetry</a></h4>
+            <h4><a href="#">09/26/2024 - DevSecOps with Mario Game Project with deployment on AKS</a></h4>
+            <h4><a href="#">10/02/2024 - Jenkins: Beginner to Pro</a></h4>
+        </div>
+
+        <h2>Multicloud Project</h2>
+        <div class="shaded-box">
+            <div class="project">
+                <h4><a href="http://34.86.14.160/">Multicloud project: (Google and AWS) Real World App Demo</a></h4>
+                <p class="project-description">This project demonstrates a real-world application of a COVID-19 Tracking Status Software for a Luxury Hotel Company. The software runs on Google Kubernetes Engine, with a Google MySQL database. Documents are stored on an AWS S3 Storage Bucket (may take a minute to spin up).</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
