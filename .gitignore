@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+*.bak
+backup.*
+react*.html
+dist/
+devsecops-dashboard/dist/

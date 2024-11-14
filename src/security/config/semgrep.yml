@@ -1,0 +1,24 @@
+rules:
+  - id: node-sql-injection
+    pattern: |
+      $DB.query($Query, ...)
+    message: Potential SQL injection detected
+    languages: [javascript]
+    severity: WARNING
+
+  - id: hardcoded-secret
+    patterns:
+      - pattern: |
+          $X = "..."
+      - pattern-inside: |
+          /password|secret|key|token|credential/i
+    message: Potential hardcoded secret
+    languages: [javascript]
+    severity: ERROR
+
+  - id: insecure-cookie
+    pattern: |
+      $APP.use(cookieSession({secure: false}))
+    message: Cookie without secure flag
+    languages: [javascript]
+    severity: ERROR
