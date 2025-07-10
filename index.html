@@ -1,62 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KCC News - Welcome</title>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Mark Kogon's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
             line-height: 1.6;
-            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
-
+        
         .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px;
         }
 
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
+        h2 {
+            color: #3498db;
+            font-size: 1.8em;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        .course-completion {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #3498db;
+        }
+
+        .shaded-box {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+            min-height: 100px;
+        }
+
+        @media (min-width: 768px) {
+            .project-row {
+                grid-template-columns: 550px 1fr;
+            }
+            
+            .project-right {
+                border-left: 2px solid #444;
+                padding-left: 20px;
+                margin-left: 0;
+            }
+        }
+
+        .project-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 15px;
+            min-width: 0;
+        }
+
+        .project-type {
+            color: #3498db;
+            font-size: 18px;
+            margin-bottom: 5px;
             font-weight: bold;
+            word-wrap: break-word;
         }
 
-        .date {
-            text-align: center;
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 30px;
+        .project-left h4 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin: 0;
+            word-wrap: break-word;
         }
 
-        .content {
-            font-size: 1em;
-            color: #333;
-            text-align: justify;
+        .project-right {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .author {
-            font-style: italic;
-            margin-top: 30px;
-            text-align: right;
-            color: #666;
+        .project-right p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            line-height: 1.2;
+            color: #bdc3c7;
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            word-wrap: break-word;
+        }
+
+        a:hover {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+        .built-using {
+            color: #f39c12;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .additional-projects h4 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #f39c12;
+        }
+
+        .project {
+            margin: 10px 0;
+        }
+
+        .project h4 {
+            color: #f39c12;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .project-description {
+            font-size: 0.9em;
+            color: #bdc3c7;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 767px) {
+            .project-type, .project-left h4 {
+                white-space: normal;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .course-completion {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to KCC News</h1>
-        <div class="date">06-13-2025</div>
+        <header>
+            <center>
+                <!-- <h2>Welcome to the Temporary Home of Kogon Cloud Consulting while we prepare kogoncloudconsulting.com</h2> -->
+                <h2><span style="color: #ffa500;">Update: 05/22/2025 - Welcome to Mark Kogon's Site Reliability/Cloud/DevOps Engineer Portfolio - I am currently studying for the AZ-500 Azure Security Engineer Certification and looking for employment</span></h2>
+        </header>
 
-        <div class="content">
-            Welcome to KCC News, to those who ask why I am starting this on Friday the 13th, I ask, why wouldn't I?
-            <p>This simple interface will suffice for now
+    </center> 
+        <center> <div class="shaded-box">
+
+            <!-- <h2>Recent Projects</h2> -->
+             <!-- project 1 -->
+             <div class="shaded-box">
+                <!-- Network Segmentation Demo-->
+<div class="project-row">
+    <div class="project-left">
+        <div class="project-type">Network Segmentation Demo</div>
+        <h4>
+            05/23/2025- <a href="https://orange-pebble-0dd8d821e.6.azurestaticapps.net/">Network Segmentation Visualization Demo</a>
+        </h4>
+    </div>
+    <div class="project-right">
+        <p class="built-using">Network Segmentation Visualization Tool featuring (in progress):</p>
+        <ul>
+            <li>Interactive network topology visualization</li>
+            <li>Real-time segmentation demonstrations</li>
+            <li>User-friendly interface for exploring network security concepts</li>
+            <li>Responsive design for cross-platform compatibility</li>
+        </ul>
+        <!-- <p class="built-using">Built using Azure CLI and Terraform, with some front end work on Azure Portal</p> -->
+    </div>
+</div>
+<!-- Network Engineering Demo-->
+<div class="project-row">
+    <div class="project-left">
+        <div class="project-type">Azure Hub-Spoke Network Architecture Demo</div>
+        <h4>
+            04/14/2025 - <a href="networking.demo.html">Click here for Soon to be Disappearing Azure Network Engineering Demo</a>
+        </h4>
+    </div>
+    <div class="project-right">
+        <p class="built-using">Enterprise-grade hub-spoke network topology implementation featuring:</p>
+        <ul>
+            <li>Segmented multi-tier architecture with isolated subnets</li>
+            <li>Network Security Group implementation with tiered access controls</li>
+            <li>VNet peering for optimized cross-network communication</li>
+            <li>Resource-efficient design prioritizing security and scalability</li>
+        </ul>
+        <p class="built-using">Built using Azure CLI and Terraform, with some front end work on Azure Portal</p>
+    </div>
+</div>
+<!-- DevSecOps Pipeline -->
+<div class="project-row">
+    <div class="project-left">
+        <div class="project-type">DevSecOps Pipeline Dashboard Demo</div>
+        <h4>
+            11/13/24 - <a href="https://devops.markkogon.com/">Click here for Live DevSecOps Dashboard</a>
+        </h4>
+    </div>
+    <div class="project-right">
+        <p class="built-using">Real-time metrics from GitHub Actions Pipeline demonstrating:</p>
+        <ul>
+            <li>Secret Scanning with Semgrep</li>
+            <li>Container Security Analysis with Trivy</li>
+            <li>Dependency Vulnerability Scanning</li>
+            <li>Static Application Security Testing (SAST)</li>
+        </ul>
+        <p class="built-using">Built using GitHub Actions, open-source security tools, and real-time metric tracking.</p>
+    </div>
+</div>
+
+
+                <!-- Application Support Demo -->
+                <div class="project-row">
+                    <div class="project-left">
+                        <div class="project-type">Application Support Engineering Demo</div>
+                        <h4>
+                            11/17/24 - <a href="https://support.markkogon.com/">Click here for Interactive Application Support Demo</a>
+                        </h4>
+                    </div>
+                    <div class="project-right">
+                        <p class="built-using">This is meant to demonstrate the workflow of a ticket and the Support Engineering skillset</p>
+                    </div>
+                </div>
+    
+                
+    
+                <!-- SRE/Observability --> 
+                <div class="project-row">
+                    <div class="project-left">
+                        <div class="project-type">Site Reliability Engineering - Observability Demo</div>
+                        <h4>
+                            11/08/24 - <a href="https://mkogondevops.grafana.net/public-dashboards/4ad93ec860ed4547ad9fba0a39a5d2cb">Click here for Live AI Ops Demo Dashboard</a>
+                        </h4>
+                    </div>
+                    <div class="project-right">
+                        <p class="built-using">Real-time monitoring of Azure Web App featuring:</p>
+                        <ul>
+                            <li>AI-powered Anomaly Detection in Response Times</li>
+                            <li>Automated Alert Generation and Intelligent Thresholds</li>
+                            <li>Predictive Analysis of System Performance</li>
+                            <li>Machine Learning-based Error Pattern Recognition</li>
+                        </ul>
+                        <p class="built-using">Built using Azure Application Insights AI capabilities and Grafana Cloud analytics.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- project 2 -->
+
+        <div class="shaded-box">
+            <!-- IaC Terraform Entry -->
+            <div class="project-row">
+                <div class="project-left">
+                    <div class="project-type">IaC Terraform HCL Azure Application Gateway</div>
+                    <h4>11/25/24 -
+                        <a href="https://github.com/mlkogon231/terraform2024">Terraform Code for Azure Application Gateway</a>
+                    </h4>
+                </div>
+                <div class="project-right">
+                    <p class="built-using">Update 11/25/24 - I updated the README.md file on the github repo to explain the project</p>
+                </div>
+            </div>
+
+            <!-- Microsoft Defender Security Demo -->
+            <div class="project-row">
+                <div class="project-left">
+                    <div class="project-type">Microsoft Defender for Cloud Security Demo</div>
+                    <h4>
+                        11/20/24 - <a href="https://defender-demo.markkogon.com">Click here for Interactive Defender Security Demo</a>
+                    </h4>
+                </div>
+                <div class="project-right">
+                    <p class="built-using">Real-time Microsoft Defender For Cloud Security Dashboard monitoring an Ubuntu VM:</p>
+                    <ul>
+                        <li>Security Assessment Overview</li>
+                        <li>Active Security Issues Tracking</li>
+                        <li>Compliance Status Monitoring</li>
+                        <li>Security Controls Implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of project 2 -->
+         <!-- proper div beginning -->
+<div class="project-row">
+    <div class="project-left">
+        <div class="project-type">11/03/2024 - Grafana Observability Project</div>
+        <h4>
+            <a href="https://mkogondevops.grafana.net/public-dashboards/29ea5f9495444909a063c3d281546db4">Click here for a Grafana Cloud Dashboard for a Demo Project</a>
+        </h4>
+    </div>
+    
+    </div>
+</div>
+<!-- proper div end -->
+          <!-- proper div beginning -->
+          <!-- Prometheus Observability Project 
+<div class="shaded-box additional-projects">
+    <div class="project-row">
+        <div class="project-left">
+            <div class="project-type">10/30/2024 - Prometheus Observability Project</div>
+            <h4>
+                <a href="https://prometheus.markkogon.com">Click here for a Live Prometheus UI Demo</a>
+            </h4>
+        </div>
+    </div>
+</div> -->
+<!-- proper div end -->
+
+        <center><h2>Certifications</h2></center> 
+        <div class="shaded-box additional-projects">
+            <h4><a href="https://learn.microsoft.com/en-us/users/markkogon-3098/credentials/3134609b24000b1c">Microsoft Azure Administrator (AZ-104)</h4>
+                <h4><a href="https://learn.microsoft.com/en-us/users/markkogon-3098/credentials/7918cfcc1dcb1485">Microsoft Security Operations Analyst (SC-200)</h4>
+            <center><h2>Recent DevOps Courses completed from Udemy.com</h2></center>
+            <h4><a href="https://www.udemy.com/certificate/UC-641b7272-2de8-47a6-a32e-44e0109a8016/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">08/20/2024 - Observability in Cloud Native apps using OpenTelemetry</a></h4>
+            <h4><a href="https://www.udemy.com/certificate/UC-6177a426-d59d-405f-ae22-cd3acb0e67cb/">09/26/2024 - DevSecOps with Mario Game Project with deployment on AKS</a></h4>
+            <h4><a href="https://www.udemy.com/certificate/UC-1be43030-d7ab-4b84-926b-27ee8b15386b/">10/02/2024 - Jenkins: Beginner to Pro</a></h4>
+            <h4><a href="https://www.udemy.com/certificate/UC-7b4d0e7b-f666-405f-b355-79f7c8a67e55/">11/20/24 - SC-200: Microsoft Security Operations Analyst Training</a></h4>
+        </div>
+
+        
+        
     </div>
 </body>
-
 </html>
